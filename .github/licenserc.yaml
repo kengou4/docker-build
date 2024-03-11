@@ -1,7 +1,11 @@
 header:
   license:
     spdx-id: Apache-2.0
-    copyright-owner: Apache Software Foundation
+    copyright-year: '2024'
+    software-name: SAP SE and Greenhouse contributors
+    content: |
+      SPDX-FileCopyrightText: 2024 SAP SE and Greenhouse contributors
+      SPDX-License-Identifier: Apache-2.0
 
   paths: # `paths` are the path list that will be checked (and fixed) by license-eye, default is ['**'].
     - '**'
@@ -17,6 +21,9 @@ header:
     - '**/**/.helmignore'
     - '**/**/requirements.lock'
     - '**/**/templates/NOTES.txt'
+    - '.github/workflows/**'
+    - '.github/**.yaml'
+    
 
   comment: on-failure
   
