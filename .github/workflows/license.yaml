@@ -8,6 +8,8 @@ jobs:
   build-license-eye:
     name: Build LicenseEye
     runs-on: [ ubuntu-latest ]
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
