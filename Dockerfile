@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 SAP SE and Greenhouse contributors
+# SPDX-License-Identifier: Apache-2.0
+
 #
 # NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
 #
