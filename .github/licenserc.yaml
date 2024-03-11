@@ -17,6 +17,9 @@ header:
     - '**/**/.helmignore'
     - '**/**/requirements.lock'
     - '**/**/templates/NOTES.txt'
+    - '.github/workflows/**'
+    - '.github/**.yaml'
+    
 
   comment: on-failure
   
