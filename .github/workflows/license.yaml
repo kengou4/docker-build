@@ -7,7 +7,7 @@ on:
 jobs:
   build-license-eye:
     name: Build LicenseEye
-    runs-on: [ oci-runner ]
+    runs-on: [ self-hosted, oci-runner ]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
