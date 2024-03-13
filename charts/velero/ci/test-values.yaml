@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 SAP SE and Greenhouse contributors
+# SPDX-License-Identifier: Apache-2.0
+
 # Set a service account so that the CRD clean up job has proper permissions to delete CRDs
 serviceAccount:
   server:
