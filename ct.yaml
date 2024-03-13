@@ -9,3 +9,4 @@ chart-dirs:
 excluded-charts:
   - prisma
   - prometheus
+  - vault-operator
