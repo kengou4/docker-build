@@ -4,3 +4,4 @@ target-branch: main
 chart-dirs:
   - charts
 excluded-charts:
+  - prisma
