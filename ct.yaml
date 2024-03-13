@@ -8,3 +8,4 @@ chart-dirs:
   - charts
 excluded-charts:
   - prisma
+  - prometheus
