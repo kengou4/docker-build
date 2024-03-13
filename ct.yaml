@@ -10,3 +10,4 @@ excluded-charts:
   - prisma
   - prometheus
   - vault-operator
+  - velero
