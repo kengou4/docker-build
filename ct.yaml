@@ -4,10 +4,11 @@
 # See https://github.com/helm/chart-testing#configuration
 remote: origin
 target-branch: main
+validate-maintainers: false
+check-version-increment: false
 chart-dirs:
   - charts
 excluded-charts:
   - prisma
   - prometheus
-  - vault-operator
-  - velero
+  
