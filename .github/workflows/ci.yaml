@@ -27,7 +27,6 @@ jobs:
         Dockerfiles: 
           - Dockerfile
           - DebianDockerfile
-          - AnotherDockerfile
     permissions:
       contents: read
       packages: write
