@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-and-push-image:
-    runs-on: oci-runner
+    runs-on: [ oci-runner ]
     strategy:
       fail-fast: false
       matrix:
