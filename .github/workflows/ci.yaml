@@ -99,7 +99,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: |
-            linux/i386
             linux/amd64
             linux/arm64
 
