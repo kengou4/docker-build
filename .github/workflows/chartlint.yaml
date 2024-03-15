@@ -26,6 +26,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Install curl
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.6.1
