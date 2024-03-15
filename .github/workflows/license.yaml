@@ -7,7 +7,7 @@ on:
 jobs:
   build-license-eye:
     name: Build LicenseEye
-    runs-on: [ oci-runner ]
+    runs-on: [ self-hosted ]
     permissions:
       contents: write
 
