@@ -1,8 +1,9 @@
 name: CI
 
 on:
-  schedule:
-    - cron: 0 8 * * *
+  # schedule:
+  #  - cron: 0 8 * * *
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -20,7 +21,13 @@ env:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: [ oci-runner ]
+    strategy:
+      matrix:
+        Dockerfiles: 
+          - Dockerfile
+          - DebianDockerfile
+          - AnotherDockerfile
     permissions:
       contents: read
       packages: write
