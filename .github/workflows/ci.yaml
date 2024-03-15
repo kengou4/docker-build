@@ -118,6 +118,9 @@ jobs:
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
 
   vulnerability-scan:
+    permissions:
+      contents: read
+      packages: read
     strategy:
       matrix:
         Dockerfiles: 
