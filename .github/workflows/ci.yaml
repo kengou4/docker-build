@@ -115,6 +115,11 @@ jobs:
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
 
   vulnerability-scan:
+    strategy:
+      matrix:
+        Dockerfiles: 
+          - Dockerfile
+          - DebianDockerfile
     name: Vulnerability Scan
     needs: build
     runs-on: ubuntu-latest
